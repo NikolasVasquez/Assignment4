@@ -4,3 +4,4 @@ Work Log
 10/24/2019 - Peter Wilson, sent email to team lead 15 minutes
 10/24/2019 - Peter on team name and logo ideas; team name GKPN. Working on logo 1 hour
 10/24/2019 - Khanh Trinh Nguyen create a logo for 10 minutes
+10/24/2019 - Gene Rocha worked on index.html for 1 hour. Added logo, background image, place holders for body, question, quote and footer.
