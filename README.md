@@ -11,7 +11,7 @@ Aside for our notes here we can communicate on our google doc or create a slack 
 
 Team roles are as follows:
 Developer:  Gene - gene@generocha.com
-Designer: Khan -Khanhtrinhvnguyen@gmail.com 
+Designer: Khanh -Khanhtrinhvnguyen@gmail.com 
 Content: Peter - peterkithene@gmail.com
 Lead: Nikolas - Vasqueznikolas@yahoo.com
 
