@@ -14,3 +14,6 @@ Developer:  Gene - gene@generocha.com
 Designer: Khan -Khanhtrinhvnguyen@gmail.com 
 Content: Peter - peterkithene@gmail.com
 Lead: Nikolas - Vasqueznikolas@yahoo.com
+
+A simple wireframe for our webpage can be like this:
+https://wireframe.cc/fEXkRr
