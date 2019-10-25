@@ -5,3 +5,5 @@ Work Log
 10/24/2019 - Peter on team name and logo ideas; team name GKPN. Working on logo 1 hour
 10/24/2019 - Khanh Trinh Nguyen create a logo for 10 minutes
 10/24/2019 - Gene Rocha worked on index.html for 1 hour. Added logo, background image, place holders for body, question, quote and footer.
+10/25/2019 - Gene Rocha added css folder 2 minutes
+10/25/2019 - Gene Rocha add custom.css file to master. Styles for Header: logo, nav, contact phone, header image, h1 h2 p font size and color. 1.5 hours.
