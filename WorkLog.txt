@@ -7,3 +7,4 @@ Work Log
 10/24/2019 - Gene Rocha worked on index.html for 1 hour. Added logo, background image, place holders for body, question, quote and footer.
 10/25/2019 - Gene Rocha added css folder 2 minutes
 10/25/2019 - Gene Rocha add custom.css file to master. Styles for Header: logo, nav, contact phone, header image, h1 h2 p font size and color. 1.5 hours.
+10/25/2019 - Gene Rocha add custom.css file path to index.html page and move header image below the header. 15 minutes.
