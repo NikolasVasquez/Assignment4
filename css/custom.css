@@ -1,1 +1,121 @@
-/* This is a placeholder for the custom css file*/
+html, body {
+	height:100%;
+	background:#ffffff;
+}
+a:hover {
+	color: #ff9900;
+}
+header {
+	display:flex;
+	background:#ffffff;
+	justify-content:space-around;
+	flex-flow: row wrap;
+}
+.child {
+	flex-grow:1;
+}
+header ul {
+	list-style-type:none;
+	display:flex;
+	flex-flow: row wrap;
+	width:500px;
+	margin:0;padding:0;
+}
+
+header ul li {
+	flex-grow:1;
+	text-align:center;
+	width:100px;
+}
+
+header ul li a {
+	color:#000000;
+	font-size: 1.3em;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+header div:nth-child(1) h1 {
+    margin-left:20px;
+    flex-grow:8;
+    width:150px;
+    padding: 0;
+    margin: 0;
+}
+header div:nth-child(1) h1 img{
+    width: 150px;
+}
+#headerImage img{
+    width: 100%;
+    height: auto;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+#contactPhone{
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: right;
+    padding-right: 20px;
+}
+#contactPhone a{
+    color: #000000;
+}
+#contactPhone a:hover{
+    color: #ff9900;
+}
+h1, h2, p{
+	color: #000000;
+	font-family: 'Raleway';
+}
+h2{
+    font-size: 2em;
+}
+p{
+    font-size: 1em;
+}
+.container{
+	padding:30px;
+}
+@media all and (max-width:800px){
+	header{
+		justify-content: space-around;
+	}
+	.container{
+		padding:50px;
+	}
+}
+@media only screen and (max-width:542px){
+	header div:nth-child(1){
+		margin: 0 auto;
+		display: block;
+		padding-bottom:0;
+	}
+	header{
+		flex-direction: column;
+		padding-bottom: 15px;
+	}
+	.child{
+		flex-grow: 1;
+		text-align: center;
+	}
+	header ul{
+		background:#ffffff;
+		width: 100%;
+		margin-top: 15px;
+	}
+	header ul li{
+		width: 50%;
+		padding: 5px;
+	}
+	header div:nth-child(2){
+		align-self: flex-end;
+		width: 80%;
+	}
+	.containter{
+		padding: 15px;
+	}
+}
