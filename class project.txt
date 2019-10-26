@@ -1,0 +1,40 @@
+Has your Alexa, Siri, or google voice been listening or recording you? Short answer is yes.
+
+
+Every time your assistant is triggered it records the interaction. A small portion of these interactions are sent to people to listen for quality control. Marking accidental recordings, confirming or fixing what was interpreted, all in order to strengthen their dictation, language etc.
+
+
+Bloomberg - Whistle blower 
+Alexa doesn't show full name but it shows first name and their account number users can go in and delete their recordings.. Unsure of how many employees but each employee is reported to go through up to 1000 audio recordings a shift. Employees are based around the world. They are a mix of contractors and fulltime employees. They sign ndcs. Employee said they have an internal chat room they send snips back and forth on for help with words, to share something funny, or sometimes to relieve stress.
+You can opt out under privacy settings.
+
+
+The Guardian - Whistle blower 
+Recordings do not come with an identifier. Unlike alexa and google voice recordings cannot be deleted by the user.  Many times of course there is identifiable information in the recording. Whistle blower says “There’s not much vetting of who works there, and the amount of data that we’re free to look through seems quite broad. It wouldn’t be difficult to identify the person that you’re listening to, especially with accidental triggers – addresses, names and so on.” They are all contractors. A large amount of the accidental triggers were from apple watch since it uses the motion of you raising arm and some noise to activate rather than ‘hey siri’ to activate.
+
+
+VRT News - Whistle blower:
+After the siri and alexa news got around, Vrt news were able to contact someone who worked for a google subcontractor. They let them listen in on google recordings. Just to prove a point they took one of the recordings, got in contact with the person and sent them their own recording to confirm. 
+
+
+In august, all three have responded by only recording if you opt in.
+
+
+
+An Alexa “hack”(mid 2018): 
+Here was an interesting hack i found from 2018.  This has been fixed and wasn’t malicious. It was done with alexa and open developer tools.
+Skills: Voice apps on alexa
+	AWS-lambda: A cloud server that runs your code
+Intent- words used to trigger next thing- stop repeat etc. You can then add instances of that word. Stop- cancel, Im done- Repeat - say again, do again, i didnt hear you.
+
+ Using Alexas skill kit - Alexa skills can be custom built and used with AWS Lambda.   Checkmaxx ,a tech security company, was able to record conversations by creating a skill that silently continued to listen after you were done using it and sent a transcript back them.
+How?
+	They used created a Calculator skill.
+ They then created a custom intent using a gibberish word and added blank instances.
+Since the gibberish word has no known pronunciation and the instances were blank, every word a user said was an instance of the “gibberish” intent and turned into text as an input. The input is processed for skill response and logged.
+
+How long could it listen? 
+
+They found you can set the endsession parameter after a skill is used, to false. This keeps the skill open 8 seconds waiting for another intent. Using a reprompt object defined with an empty output speech, they  could extend the session another 8 secs. So with tools given the skill would continue to stay open after use and log until there was 16 second gap with no input.
+
+All of these are just internal ways the microphone in your pocket has recorded information. Who knows what others are capable of or what will come out in the future but always be aware because actual privacy is almost gone is all I can conclude.
