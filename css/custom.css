@@ -44,10 +44,31 @@ header div:nth-child(1) h1 {
 header div:nth-child(1) h1 img{
     width: 150px;
 }
-#headerImage img{
+#headerImage{
+	background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6)
+    ),
+	url("../images/Seattle_3.jpg");
+	background-size: cover;
     width: 100%;
-    height: auto;
+	height: 100%;
+	position: relative;
+	float: left;
 }
+.mid h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 54%;
+	font-size: 2rem;
+	transform: translate(-50%, -50%);
+  }
 header nav{
     display: flex;
     align-items: center;
@@ -67,9 +88,9 @@ header nav{
 #contactPhone a:hover{
     color: #ff9900;
 }
-h1, h2, p{
+h1, h2{
 	color: #000000;
-	font-family: 'Raleway';
+	font-family: 'Roboto', sans-serif;
 }
 h2{
     font-size: 2em;
