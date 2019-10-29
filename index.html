@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="child">
-                <h1><img src="../logo.png" alt="GKPN"></h1>
+                <h1><img src="/logo.png" alt="GKPN"></h1>
             </div>
             <nav>
                 <ul class="child">
@@ -23,25 +23,53 @@
               <div class="child" id="contactPhone">
                   <a href="#"><i class="fas fa-phone-square"></i></a>
               </div>
+              <div class="container" id="headerImage">
+                <div class="mid">
+                    <h2>When need a tag line</h2>
+                </div>
+            </div>
         </header>
-        <div class="child" id="headerImage">
-            <div class="mid">
-                <h2>Is Alexa, Siri, or Google Voice listening or recording you?</h2>
+        <div class="flexcontainter" style="border: 1px solid #000000;">
+            <div class="container left">
+                <h2>Need a headline</h2>
+                <h3>Is Alexa, Siri, or Google Voice listening or recording you?</h3>
+                <p>Every time your assistant is triggered it records the interaction. A small portion of these interactions are sent to people to listen for quality control. Marking accidental recordings, confirming or fixing what was interpreted, all in order to strengthen their dictation, language etc.</p>
+                <p><em>Bloomberg</em> - Whistle blower</p>
+                <p>Alexa doesn't show full name but it shows first name and their account number users can go in and delete their recordings.. Unsure of how many employees but each employee is reported to go through up to 1000 audio recordings a shift. Employees are based around the world. They are a mix of contractors and fulltime employees. They sign ndcs. Employee said they have an internal chat room they send snips back and forth on for help with words, to share something funny, or sometimes to relieve stress.
+                You can opt out under privacy settings.</p>
+                <p><em>The Guardian</em> - Whistle blower</p> 
+                <p>Recordings do not come with an identifier. Unlike alexa and google voice recordings cannot be deleted by the user.  Many times of course there is identifiable information in the recording. Whistle blower says “There’s not much vetting of who works there, and the amount of data that we’re free to look through seems quite broad. It wouldn’t be difficult to identify the person that you’re listening to, especially with accidental triggers – addresses, names and so on.” They are all contractors. A large amount of the accidental triggers were from apple watch since it uses the motion of you raising arm and some noise to activate rather than ‘hey siri’ to activate.</p>
+                <p><em>News</em> - Whistle blower:
+                <p>After the siri and alexa news got around, Vrt news were able to contact someone who worked for a google subcontractor. They let them listen in on google recordings. Just to prove a point they took one of the recordings, got in contact with the person and sent them their own recording to confirm.</p>
+                <p>In august, all three have responded by only recording if you opt in.
+                <p>An Alexa “hack”(mid 2018):</p>
+                 <p>Here was an interesting hack i found from 2018.  This has been fixed and wasn’t malicious. It was done with alexa and open developer tools.
+                Skills: Voice apps on alexa</p>
+                <p>AWS-lambda: A cloud server that runs your code</p>
+                <p></p>Intent- words used to trigger next thing- stop repeat etc. You can then add instances of that word. Stop- cancel, Im done- Repeat - say again, do again, i didnt hear you.</p>
+                <p>Using Alexas skill kit - Alexa skills can be custom built and used with AWS Lambda.   Checkmaxx ,a tech security company, was able to record conversations by creating a skill that silently continued to listen after you were done using it and sent a transcript back them.</p>
+                <p></p>How?
+                <p>They used created a Calculator skill.</p>
+                <p>They then created a custom intent using a gibberish word and added blank instances.
+                Since the gibberish word has no known pronunciation and the instances were blank, every word a user said was an instance of the “gibberish” intent and turned into text as an input. The input is processed for skill response and logged.</p>
+                <p>How long could it listen?</p>
+                <p>They found you can set the endsession parameter after a skill is used, to false. This keeps the skill open 8 seconds waiting for another intent. Using a reprompt object defined with an empty output speech, they  could extend the session another 8 secs. So with tools given the skill would continue to stay open after use and log until there was 16 second gap with no input.</p>
+                <p>All of these are just internal ways the microphone in your pocket has recorded information. Who knows what others are capable of or what will come out in the future but always be aware because actual privacy is almost gone is all I can conclude.</p>
+            </div>
+            <div class="container right">
+                    <h3>We need an image</h3>
+                </div>
+            <div class="container right">
+                <h3>Quotes</h3>
             </div>
         </div>
-        <div class="container">
-            <h2>About</h2>
-            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ex nibh, sed eleifend tortor eleifend at. Pellentesque nec posuere lectus. Ut in sollicitudin ligula. Fusce sodales est vel orci convallis sodales. Integer consectetur purus ultricies urna tincidunt, vitae auctor dolor mattis. Nulla gravida aliquam sapien, id lobortis eros vulputate quis. Aliquam a pretium diam. Sed ac viverra eros. Nulla finibus purus a hendrerit faucibus. Duis lobortis neque quis aliquet volutpat. Vivamus viverra enim risus, a tempor mauris viverra et. Nulla facilisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer congue nunc consequat tortor accumsan, sed consequat erat posuere.</p>
-            <p>Etiam a enim facilisis, maximus nulla at, fringilla lorem. Nunc ut aliquam nulla. Curabitur a placerat sapien, at ultricies nibh. Fusce bibendum nunc quis arcu egestas fermentum. Proin semper in libero non porttitor. Cras fringilla, ipsum nec fermentum imperdiet, est est semper risus, et tristique neque magna eu tortor. Quisque turpis erat, finibus a magna ac, vestibulum venenatis purus. Morbi rhoncus tellus eu tincidunt tincidunt. Quisque feugiat lectus et purus bibendum sagittis. Nulla lacus risus, ornare vitae libero a, fermentum molestie enim. Donec consequat mattis velit, nec sollicitudin mi iaculis a. Praesent sollicitudin, quam ut congue faucibus, augue nisi malesuada arcu, et tempor lacus quam id dolor. Ut molestie id purus at vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </div>
-        <div class="container">
-                <h3>We need an image</h3>
+        <div class="flexcontainer" style="border: 1px solid #000000;">
+            <div class="container">
+                <h3>Have a Questions?</h3>
             </div>
-        <div class="container">
-            <h3>Quotes</h3>
-        </div>
-        <div class="container">
-            <h3>Have a Questions?</h3>
+            <div class="container">
+                <h3>Form</h3>
+            </div>
         </div>
         <footer>
             <div class="container">
