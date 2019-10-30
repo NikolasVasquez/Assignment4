@@ -1,6 +1,7 @@
 html, body {
 	height:100%;
 	background:#ffffff;
+	margin: 0;
 }
 a:hover {
 	color: #ff9900;
@@ -18,33 +19,59 @@ header ul {
 	list-style-type:none;
 	display:flex;
 	flex-flow: row wrap;
-	width:500px;
+	width:600px;
 	margin:0;padding:0;
 }
-
 header ul li {
 	flex-grow:1;
+	margin: 0 1.25em;
 	text-align:center;
-	width:100px;
 }
-
 header ul li a {
-	color:#000000;
-	font-size: 1.3em;
-    text-transform:uppercase;
-    text-decoration: none;
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 8px 12px;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #444546;
+	font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+	text-decoration: none;
 }
-header div:nth-child(1) h1 {
+.nav-effect a:hover::before, .nav-effect a:focus::before {
+    color: #444546;
+	text-shadow: 10px 0 #444546, -10px 0 #444546;
+}
+.nav-effect a::before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    color: transparent;
+    content: '•';
+    text-shadow: 0 0 transparent;
+    font-size: 1.2em;
+    -webkit-transition: text-shadow 0.3s, color 0.3s;
+    -moz-transition: text-shadow 0.3s, color 0.3s;
+    transition: text-shadow 0.3s, color 0.3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+header div:nth-child(1) .logo{
     margin-left:20px;
     flex-grow:8;
     width:150px;
     padding: 0;
     margin: 0;
 }
-header div:nth-child(1) h1 img{
+header div:nth-child(1) img{
     width: 150px;
 }
-#headerImage{
+.hero{
 	background:
     linear-gradient(
     rgba(0, 0, 0, 0.2),
@@ -52,29 +79,39 @@ header div:nth-child(1) h1 img{
     ),
 	url("../images/Seattle_3.jpg");
 	background-size: cover;
-    width: 100%;
-	height: 400px;
-	position: relative;
-	float: left;
+	background-position: center;
+	width:100%;
+	height: 100vh;
+	display: flex;
 }
-.mid h2 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 900;
-	color: white;
+.center-content{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.center-content h1,.center-content h3{
+	color: #ffffff;
+	line-height: 1;
+	text-align: center;
+}
+.center-content h1{
 	text-transform: uppercase;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 54%;
-	font-size: 2rem;
-	transform: translate(-50%, -50%);
-  }
+	font-size: 5em;
+	margin-bottom: 0;
+}
+.center-content h3{
+	margin-bottom: 40px;
+	font-size: 2em;
+	font-weight: normal;
+}
 header nav{
     display: flex;
     align-items: center;
 }
 #contactPhone{
-    font-size: 5em;
+    font-size: 4em;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -97,6 +134,13 @@ h2{
 }
 p{
     font-size: 1em;
+}
+a{
+	transition: all .275s;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 .container{
 	padding:30px;
