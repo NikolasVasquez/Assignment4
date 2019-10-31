@@ -9,28 +9,28 @@
     </head>
     <body>
         <header>
-            <div class="child">
-                <h1><img src="images/logo.png" alt="GKPN"></h1>
+            <div class="child logo">
+                <img src="images/logo.png" alt="GKPN">
             </div>
             <nav>
                 <ul class="child">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Questions?</a></li>
-                    <li><a href="#">Quotes</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="nav-effect"><a href="#about" class="nav-effect">About</a></li>
+                    <li class="nav-effect"><a href="#">Questions?</a></li>
+                    <li class="nav-effect"><a href="#">Quotes</a></li>
+                    <li class="nav-effect"><a href="#">Contact</a></li>
                   </ul>
             </nav>
               <div class="child" id="contactPhone">
                   <a href="#"><i class="fas fa-phone-square"></i></a>
               </div>
-              <div class="container" id="headerImage">
-                <div class="mid">
-                    <h2>When need a tag line</h2>
-                </div>
+              <div class="hero">
+              <div class="center-content">
+                <h1>GKPN</h1><h3>Helping you keep your privacy with this wave of new technology in our homes.</h3>
+              </div>
             </div>
         </header>
-        <div class="flexcontainter" style="border: 1px solid #000000;">
-            <div class="container left">
+        <div class="grid-containter">
+            <div id="about" class="main-content">
                 <h2>Need a headline</h2>
                 <h3>Is Alexa, Siri, or Google Voice listening or recording you?</h3>
                 <p>Every time your assistant is triggered it records the interaction. A small portion of these interactions are sent to people to listen for quality control. Marking accidental recordings, confirming or fixing what was interpreted, all in order to strengthen their dictation, language etc.</p>
@@ -56,31 +56,36 @@
                 <p>They found you can set the endsession parameter after a skill is used, to false. This keeps the skill open 8 seconds waiting for another intent. Using a reprompt object defined with an empty output speech, they  could extend the session another 8 secs. So with tools given the skill would continue to stay open after use and log until there was 16 second gap with no input.</p>
                 <p>All of these are just internal ways the microphone in your pocket has recorded information. Who knows what others are capable of or what will come out in the future but always be aware because actual privacy is almost gone is all I can conclude.</p>
             </div>
-            <div class="container right">
-                    <h3>We need an image</h3>
-                </div>
-            <div class="container right">
-                <h3>Quotes</h3>
+            <div class="side-image">
+                <img src="images/textPhotoAlexa.jpeg" alt="Alexa image">
             </div>
+            <div class="jokes-copy jokes">
+                <p>Ask Siri to divide 0 by 0</p>
+                    <blockquote>
+                    <p>“Imagine that you have zero cookies, and you split them evenly among zero friends.</p>
+                    <p>How many cookies does each person get?</p>
+                    <p>See? It doesn’t make sense. And Cookie Monster is sad that there are no cookies, and you are sad that you have no friends."</p>
+                    <p>-- Siri</p>
+                    </blockquote>
+                </div>
         </div>
-        <div class="flexcontainer" style="border: 1px solid #000000;">
-            <div class="container">
+        <div class="grid-containter">
+            <div class="question">
                 <h3>Have a Questions?</h3>
             </div>
-            <div class="container">
+            <div class="form">
                 <h3>Form</h3>
             </div>
         </div>
         <footer>
-            <div class="container">
-                <h3>GKPN Team</h3>
-                <ul>
-                    <li>Gene - gene@generocha.com Developer</li>
-                    <li>Khanh -Khanhtrinhvnguyen@gmail.com Designer</li>
-                    <li>Peter - peterkithene@gmail.com Content</li>
-                    <li>Nikolas - Vasqueznikolas@yahoo.com Lead</li>
-                </ul>
+            <h3>GKPN Team</h3>
+            <div class="footer">
+                <div class="team team1"><h4>Gene</h4><p>Developer<br>gene@generocha.com</p></div>
+                <div class="team team2"><h4>Khanh</h4><p>Designer<br>Khanhtrinhvnguyen@gmail.com</p></div>
+                <div class="team team3"><h4>Peter</h4><p>Content<br>peterkithene@gmail.com</p></div>
+                <div class="team team4"><h4>Nikolas</h4><p>Lead<br>Vasqueznikolas@yahoo.com</p></div>
             </div>
         </footer>
+        <div class="banner"><p>ITC 134 Fall/2019 Group 4 A4: GitHub Web Page Project</p></div>
     </body>
 </html>
