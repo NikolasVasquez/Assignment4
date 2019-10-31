@@ -128,12 +128,26 @@ header nav{
 h1, h2{
 	color: #000000;
 	font-family: 'Roboto', sans-serif;
+	line-height: 2em;
 }
 h2{
-    font-size: 2em;
+	font-size: 2em;
+	margin: 0 0 1rem;
+}
+h3{
+	font-size: 1.6em;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 0 1rem;
+}
+h4{
+	font-size: 1.3em;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 0 1rem;
 }
 p{
     font-size: 1em;
+	line-height: 1.6;
+	margin: 0 0 1rem;
 }
 a{
 	transition: all .275s;
@@ -149,11 +163,103 @@ img {
 	display: flex;
 	flex-direction: row;
 }
-.left{
-	align-self: flex-start;
+.grid-containter{
+	display: grid;
+	grid-gap: 2em;
+	padding: 1em;
 }
-.right{
-	margin-left: auto;
+.main-content{
+	grid-column: 1/3;
+	grid-row: 1/4;
+}
+.side-image {
+	grid-column: 4/5 ;
+	grid-row: 2 / 1;
+}
+.jokes {
+	grid-column: 4 / 5;
+	grid-row: 2;
+}
+.question{
+	grid-column: 1/2;
+	grid-row: 2;
+}
+.form{
+	grid-column: 2/4;
+	grid-row: 2;
+}
+/* blockquote */
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    box-sizing: border-box;
+}
+.jokes-copy{
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  width: 80%;
+  margin:0 auto;
+  padding: 3rem;
+}
+.jokes-copy p {
+    text-rendering: optimizeLegibility;
+}
+.jokes-copy blockquote {
+    border-radius: 3px;
+    position: relative;  /*  <--- */
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  /* create space for the quotes */
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    background: #E8E8E8;
+}
+/* -- create the quotation marks -- */
+.jokes-copy blockquote:before,
+.jokes-copy blockquote:after{
+    font-family: FontAwesome;
+    position: absolute;
+    /* -- inside the relative position of blockquote -- */
+    top: 13px;
+    color: #E8E8E8;
+    font-size: 34px;
+}
+.jokes-copy blockquote:before{
+    content: "\f10d";
+    margin-right: 13px;
+    right: 100%;
+}
+.jokes-copy blockquote:after{
+    content: "\f10e";
+    margin-left: 13px;
+    left: 100%;  
+}
+footer h3{
+	text-align: center;
+}
+.footer {
+	display: grid;
+    grid-gap: .1em;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  }
+  
+  .team {
+	background-color: #E8E8E8;
+	color: #4a4a4a;
+	padding: 20px;
+	font-size: 1em;
+  }
+  .banner{
+	grid-column: 1 / -1;
+	background-color: #000000;
+	height: 3em;
+  }
+.banner p{
+	color: #E8E8E8;
+	text-align: center;
+	padding: 1em;
 }
 @media all and (max-width:800px){
 	header{
