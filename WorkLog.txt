@@ -14,4 +14,4 @@ Work Log
 10/29/2019 - Gene Rocha add header image overlay and header image content.
 10/29/2019 - Peter Wilson add quote to the content 15 minutes.
 10/29/2019 - Nikolas Vasquez worked on Headline, text photo , and Quote. Worked with developer on final details, we are getting close to finished product!
-10/30/2019 - Gene Rocha worked on css grid elements for custom.css and index.html, add footer content. Also add sidebar image and quote/joke 
+10/30/2019 - Gene Rocha worked on css grid elements for custom.css and index.html, add footer content. Also add sidebar image,quote/joke and add team members in the footer.
