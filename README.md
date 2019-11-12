@@ -1,6 +1,8 @@
 # Assignment4
 A4: GitHub Web Page Project
-<a href="https://nikolasvasquez.github.io/Assignment4/">Our group project web page on github pages</a>
+
+Our group project web page on github pages 
+<a href="https://nikolasvasquez.github.io/Assignment4/">https://nikolasvasquez.github.io/Assignment4/</a>
 
 
 Hello Team, this is our repository!
